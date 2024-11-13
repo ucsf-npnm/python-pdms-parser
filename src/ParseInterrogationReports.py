@@ -29,7 +29,7 @@ master_file_path = MergeFiles(OUTDIR, input_files, fn_merged)
 
 tabulated_data = RunParser(master_file_path)
 ##save new dataframe as csv file
-tabulated_data.to_csv(pathlib.Path(OUTDIR, fn_parsed))
+tabulated_data.to_csv(pathlib.Path(OUTDIR, fn_parsed), index=False)
 
 ## END OF CODE ##
 
