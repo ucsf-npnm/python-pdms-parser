@@ -18,7 +18,6 @@ output_dir   = '/userdata/dastudillo/patient_data/stage2'
 
 #Main code
 #Open PDF file and extract text from all pages
-
 complete_path = pathlib.Path(input_dir, filename)
 
 with open(complete_path, 'rb') as file:
@@ -31,7 +30,6 @@ with open(complete_path, 'rb') as file:
 split_text = text.split('\n')
 
 #Retrieve and format programming timestamps
-
 programming_dates_raw = []
 programming_times_raw = []
 
